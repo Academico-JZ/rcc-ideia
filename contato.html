@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudyVet — Diagnóstico de Nível, Sobre o Projeto e Contato. Descubra sua trilha pedagógica ideal em Medicina Veterinária e tire suas dúvidas.">
+  <title>StudyVet // Diagnóstico de Nível & Sobre o Projeto</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a3622'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50' font-weight='800' fill='%23ffffff'>SV</text></svg>">
+  <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Principal e Navegação -->
+  <header class="cabecalho-principal">
+    <div class="conteiner cabecalho-barra">
+      <a href="index.html" class="marca-link" title="StudyVet - Página Inicial">
+        <div class="marca-icone" aria-hidden="true">SV</div>
+        <div class="marca-texto">
+          <span class="marca-titulo">StudyVet</span>
+          <span class="marca-sub">Medicina Veterinária</span>
+        </div>
+      </a>
+
+      <nav class="navegacao-menu" aria-label="Navegação Principal">
+        <a href="index.html" class="navegacao-link">Início</a>
+        <a href="conteudos.html" class="navegacao-link">Biblioteca & Amostras</a>
+        <a href="pratica.html" class="navegacao-link">Casos Clínicos & Questões</a>
+        <a href="contato.html" class="navegacao-link ativo">Diagnóstico & Sobre</a>
+      </nav>
+
+      <div class="cabecalho-acoes">
+        <button type="button" class="btn-tema" id="btn-tema" title="Alternar tema visual (Planejado para Versão 2)">
+          <span>Modo Escuro (V2)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudo-principal">
+
+    <!-- Seção de Abertura e Sobre o Projeto -->
+    <section class="secao-espacada" style="padding-bottom: 2.5rem;">
+      <div class="conteiner">
+        <div class="texto-centralizado">
+          <span class="destaque-subtitulo">Projeto Acadêmico & Autoria</span>
+          <h1>Sobre o StudyVet & Diagnóstico de Estudos</h1>
+          <p class="lead" style="margin-inline: auto;">
+            Conheça os fundamentos pedagógicos do portal, faça seu diagnóstico inicial de matérias e entre em contato para dúvidas ou mentoria acadêmica.
+          </p>
+        </div>
+
+        <div style="max-width: 800px; margin-inline: auto; margin-top: 2rem; background-color: var(--cor-superficie); border: 1px solid var(--cor-borda); border-radius: var(--raio-lg); padding: 2rem; box-shadow: var(--sombra-sm);">
+          <h2>Proposta Pedagógica & Metodologia</h2>
+          <p>
+            O <strong>StudyVet (Projeto MED-VET)</strong> nasceu da vivência direta com as dificuldades da graduação em Medicina Veterinária: livros extensos com centenas de páginas, excesso de terminologias de baixa aplicação prática e falta de conexões visuais entre as ciências de base (como a Bioquímica e a Fisiologia) e os quadros clínicos reais.
+          </p>
+          <p>
+            Nossa metodologia organiza os conteúdos em <strong>resumos visuais de alta densidade</strong>, fluxogramas de resposta imune, tabelas comparativas de lesões e cálculos de posologia aplicados. O objetivo central é fornecer ao estudante universitário um mapa claro do que é realmente essencial para seu aprendizado e retenção de longo prazo.
+          </p>
+
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--cor-borda); display: flex; flex-wrap: wrap; gap: 2rem;">
+            <div>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--cor-destaque); text-transform: uppercase;">Instituição</span>
+              <p style="font-weight: 600; margin: 0;">Instituto Federal Catarinense (IFC)</p>
+            </div>
+            <div>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--cor-destaque); text-transform: uppercase;">Disciplina</span>
+              <p style="font-weight: 600; margin: 0;">Desenvolvimento Web 1</p>
+            </div>
+            <div>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--cor-destaque); text-transform: uppercase;">Modalidade</span>
+              <p style="font-weight: 600; margin: 0;">Trabalho Individual de Tema Livre</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário Semântico de Diagnóstico e Contato -->
+    <section class="secao-espacada secao-alt" aria-labelledby="titulo-formulario">
+      <div class="conteiner">
+        <div class="texto-centralizado" style="margin-bottom: 2rem;">
+          <span class="destaque-subtitulo">Diagnóstico Personalizado</span>
+          <h2 id="titulo-formulario">Formulário de Nível Acadêmico & Contato</h2>
+          <p class="lead" style="margin-inline: auto;">
+            Preencha seus dados para receber a recomendação ideal da trilha pedagógica para o seu semestre e enviar sua mensagem.
+          </p>
+        </div>
+
+        <div class="form-contato-conteiner">
+          <form id="form-studyvet" action="#" method="post">
+
+            <!-- Linha 1: Nome e E-mail -->
+            <div class="form-linha">
+              <div class="form-grupo">
+                <label for="campo-nome">Nome Completo *</label>
+                <input type="text" id="campo-nome" name="nome" class="campo-texto" placeholder="Ex: Lucas Silva Santos" required>
+              </div>
+
+              <div class="form-grupo">
+                <label for="campo-email">E-mail Universitário *</label>
+                <input type="email" id="campo-email" name="email" class="campo-texto" placeholder="Ex: lucas.silva@universidade.edu.br" required>
+              </div>
+            </div>
+
+            <!-- Linha 2: Faculdade e Semestre Atual -->
+            <div class="form-linha">
+              <div class="form-grupo">
+                <label for="campo-faculdade">Instituição de Ensino Superior</label>
+                <input type="text" id="campo-faculdade" name="faculdade" class="campo-texto" placeholder="Ex: IFC, USP, UFRGS, UDESC...">
+              </div>
+
+              <div class="form-grupo">
+                <label for="campo-semestre">Semestre Atual do Curso *</label>
+                <select id="campo-semestre" name="semestre" class="campo-select" required>
+                  <option value="" disabled selected>Selecione seu semestre</option>
+                  <option value="1">1º Semestre (Ciclo Básico)</option>
+                  <option value="2">2º Semestre (Ciclo Básico)</option>
+                  <option value="3">3º Semestre (Ciclo Básico)</option>
+                  <option value="4">4º Semestre (Pré-Clínico)</option>
+                  <option value="5">5º Semestre (Pré-Clínico)</option>
+                  <option value="6">6º Semestre (Clínica Médica)</option>
+                  <option value="7">7º Semestre (Clínica Médica)</option>
+                  <option value="8">8º Semestre (Clínica Cirúrgica)</option>
+                  <option value="9">9º Semestre (Hospital-Escola / Estágio)</option>
+                  <option value="10">10º Semestre (Concluinte / Residência)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Diagnóstico de Nível (Radios) -->
+            <div class="form-grupo" style="margin-top: 0.5rem;">
+              <label>Como você avalia seu domínio nas disciplinas de base? *</label>
+              <div class="grupo-radios">
+                <label class="controle-rotulado">
+                  <input type="radio" name="nivel-dominio" value="iniciante" required>
+                  <span>Iniciante (muitas dúvidas teóricas)</span>
+                </label>
+                <label class="controle-rotulado">
+                  <input type="radio" name="nivel-dominio" value="intermediario">
+                  <span>Intermediário (compreendo a base, falta raciocínio prático)</span>
+                </label>
+                <label class="controle-rotulado">
+                  <input type="radio" name="nivel-dominio" value="avancado">
+                  <span>Avançado (focado em residência e concursos)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Áreas de Maior Dificuldade (Checkboxes) -->
+            <div class="form-grupo" style="margin-top: 1rem;">
+              <label>Em quais áreas você sente maior necessidade de resumos visuais?</label>
+              <div class="grupo-checkboxes">
+                <label class="controle-rotulado">
+                  <input type="checkbox" name="dificuldade" value="imunologia">
+                  <span>Imunologia Veterinária</span>
+                </label>
+                <label class="controle-rotulado">
+                  <input type="checkbox" name="dificuldade" value="farmacologia">
+                  <span>Farmacologia & Posologia</span>
+                </label>
+                <label class="controle-rotulado">
+                  <input type="checkbox" name="dificuldade" value="patologia">
+                  <span>Patologia Sistêmica</span>
+                </label>
+                <label class="controle-rotulado">
+                  <input type="checkbox" name="dificuldade" value="neurologia">
+                  <span>Sistema Nervoso & Sinapses</span>
+                </label>
+                <label class="controle-rotulado">
+                  <input type="checkbox" name="dificuldade" value="bioquimica">
+                  <span>Bioquímica Comparada</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Mensagem ou Dúvida (Textarea) -->
+            <div class="form-grupo" style="margin-top: 1rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                <label for="campo-mensagem" style="margin-bottom: 0;">Mensagem, Dúvida ou Sugestão de Tema</label>
+                <span id="contador-caracteres" style="font-size: 0.8rem; color: var(--cor-texto-mutado);">0 / 500 caracteres (V2)</span>
+              </div>
+              <textarea id="campo-mensagem" name="mensagem" class="campo-textarea" rows="4" maxlength="500" placeholder="Escreva aqui sua dúvida acadêmica, sugestão de apostila ou comentário sobre o projeto StudyVet..."></textarea>
+            </div>
+
+            <!-- Botão de Envio -->
+            <div style="margin-top: 1.5rem;">
+              <button type="submit" class="btn btn-primario btn-bloco">Enviar Diagnóstico & Mensagem</button>
+            </div>
+
+            <p style="font-size: 0.8rem; color: var(--cor-texto-mutado); text-align: center; margin-top: 1rem; margin-bottom: 0;">
+              Seus dados serão tratados com privacidade exclusivamente para fins de orientação de estudos acadêmicos.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Perguntas Frequentes (FAQ) -->
+    <section class="secao-espacada" aria-labelledby="titulo-faq">
+      <div class="conteiner">
+        <div class="texto-centralizado">
+          <span class="destaque-subtitulo">Tire suas Dúvidas</span>
+          <h2 id="titulo-faq">Perguntas Frequentes (FAQ)</h2>
+          <p class="lead" style="margin-inline: auto;">
+            Respostas imediatas sobre o funcionamento do portal, formato dos materiais didáticos e termos acadêmicos.
+          </p>
+        </div>
+
+        <div class="faq-grade" style="max-width: 800px; margin-inline: auto;">
+          <article class="card-faq">
+            <h4>1. O acesso aos resumos e materiais didáticos expira?</h4>
+            <p>
+              Não. O acesso às apostilas e materiais adquiridos é vitalício, incluindo o direito de download dos PDFs em alta resolução para estudo offline em tablets e computadores pessoais.
+            </p>
+          </article>
+
+          <article class="card-faq">
+            <h4>2. Consigo imprimir as apostilas e visualizar no tablet/celular?</h4>
+            <p>
+              Sim! Todos os materiais em PDF são formatados e diagramados em alta resolução, pensados especialmente para anotações manuais em tablets (GoodNotes, Notability, Samsung Notes) ou para impressão nítida em papel A4.
+            </p>
+          </article>
+
+          <article class="card-faq">
+            <h4>3. Como recebo os módulos e apostilas selecionadas?</h4>
+            <p>
+              Assim que o cadastro e a seleção do módulo são confirmados, os links para o leitor web integrado e para os downloads dos arquivos são disponibilizados imediatamente no seu e-mail cadastrado.
+            </p>
+          </article>
+
+          <article class="card-faq">
+            <h4>4. O conteúdo do StudyVet serve para concursos e residências médico-veterinárias?</h4>
+            <p>
+              Sim. As questões e resumos visuais são baseados na bibliografia clássica cobrada nos principais editais de residência hospitalar e concursos públicos federais e estaduais de Medicina Veterinária.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Semântico -->
+  <footer class="rodape-principal">
+    <div class="conteiner">
+      <div class="rodape-grade">
+        <div class="rodape-coluna">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+            <div class="marca-icone" style="width: 28px; height: 28px; font-size: 0.9rem;">SV</div>
+            <span style="font-weight: 800; font-size: 1.1rem; color: #fff;">StudyVet</span>
+          </div>
+          <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5;">
+            Diagnóstico de perfil universitário, suporte pedagógico e canal de contato para estudantes de Medicina Veterinária.
+          </p>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Navegação</h4>
+          <ul class="rodape-lista">
+            <li><a href="index.html">Início (Apresentação)</a></li>
+            <li><a href="conteudos.html">Biblioteca & Amostras Gratuitas</a></li>
+            <li><a href="pratica.html">Casos Clínicos & Questões</a></li>
+            <li><a href="contato.html">Diagnóstico & Sobre o Projeto</a></li>
+          </ul>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Suporte Acadêmico</h4>
+          <ul class="rodape-lista">
+            <li><a href="contato.html">Diagnóstico de Nível</a></li>
+            <li><a href="contato.html">Dúvidas Frequentes (FAQ)</a></li>
+            <li><a href="contato.html">Sugestão de Temas</a></li>
+            <li><a href="contato.html">Contato com Autoria</a></li>
+          </ul>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Informações Acadêmicas</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.4rem;">
+            <strong>Disciplina:</strong> Desenvolvimento Web 1 (IFC)
+          </p>
+          <p style="font-size: 0.85rem; color: #94a3b8;">
+            <strong>Entrega:</strong> Versão 1 (HTML5 e CSS3)
+          </p>
+        </div>
+      </div>
+
+      <div class="rodape-aviso">
+        <p>
+          <strong>Aviso de Responsabilidade Educacional:</strong> O StudyVet é um projeto didático e acadêmico. Nenhum conteúdo deste portal substitui aulas teóricas, livros-texto originais ou conduta clínico-veterinária prescrita por profissional habilitado.
+        </p>
+        <p style="margin-top: 0.5rem; color: #64748b;">
+          © 2026 StudyVet — Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

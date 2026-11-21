@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudyVet — Biblioteca de Apostilas e Prévia Gratuita. Acervo completo com resumos visuais de Imunologia, Farmacologia, Patologia, Neurologia e Bioquímica.">
+  <title>StudyVet // Biblioteca & Amostras Gratuitas</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a3622'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50' font-weight='800' fill='%23ffffff'>SV</text></svg>">
+  <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Principal e Navegação -->
+  <header class="cabecalho-principal">
+    <div class="conteiner cabecalho-barra">
+      <a href="index.html" class="marca-link" title="StudyVet - Página Inicial">
+        <div class="marca-icone" aria-hidden="true">SV</div>
+        <div class="marca-texto">
+          <span class="marca-titulo">StudyVet</span>
+          <span class="marca-sub">Medicina Veterinária</span>
+        </div>
+      </a>
+
+      <nav class="navegacao-menu" aria-label="Navegação Principal">
+        <a href="index.html" class="navegacao-link">Início</a>
+        <a href="conteudos.html" class="navegacao-link ativo">Biblioteca & Amostras</a>
+        <a href="pratica.html" class="navegacao-link">Casos Clínicos & Questões</a>
+        <a href="contato.html" class="navegacao-link">Diagnóstico & Sobre</a>
+      </nav>
+
+      <div class="cabecalho-acoes">
+        <button type="button" class="btn-tema" id="btn-tema" title="Alternar tema visual (Planejado para Versão 2)">
+          <span>Modo Escuro (V2)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudo-principal">
+
+    <!-- Introdução da Página -->
+    <section class="secao-espacada" style="padding-bottom: 2rem;">
+      <div class="conteiner">
+        <div class="texto-centralizado">
+          <span class="destaque-subtitulo">Acervo Acadêmico</span>
+          <h1>Biblioteca de Apostilas & Prévia Gratuita</h1>
+          <p class="lead" style="margin-inline: auto;">
+            Acesse materiais sintéticos com diagramas autorais, quadros comparativos entre patologias e amostras reais para o seu ciclo de estudos.
+          </p>
+        </div>
+
+        <!-- Painel de Progresso, Busca e Filtros -->
+        <div class="barra-busca-filtros" style="margin-top: 2rem;">
+          <label for="busca-conteudo" style="margin-bottom: 0.5rem; font-weight: 700;">Pesquisar nos materiais:</label>
+          <input type="search" id="busca-conteudo" class="campo-busca" placeholder="Digite uma palavra-chave, célula ou patologia (ex: Neutrófilo, Sinapse, Posologia, Necrose)...">
+
+          <div class="filtros-grupo" style="margin-bottom: 0.75rem;">
+            <span class="filtro-rotulo">Disciplinas:</span>
+            <button type="button" class="btn-filtro ativo">Todas</button>
+            <button type="button" class="btn-filtro">Imunologia</button>
+            <button type="button" class="btn-filtro">Farmacologia</button>
+            <button type="button" class="btn-filtro">Patologia</button>
+            <button type="button" class="btn-filtro">Neurologia</button>
+            <button type="button" class="btn-filtro">Bioquímica</button>
+          </div>
+
+          <div class="filtros-grupo">
+            <span class="filtro-rotulo">Dificuldade:</span>
+            <button type="button" class="btn-filtro ativo">Todos os Níveis</button>
+            <button type="button" class="btn-filtro">Introdutório</button>
+            <button type="button" class="btn-filtro">Intermediário</button>
+            <button type="button" class="btn-filtro">Avançado</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layout Dividido: Conteúdo Central + Glossário Lateral (Flexbox) -->
+    <section class="secao-espacada" style="padding-top: 0;">
+      <div class="conteiner layout-conteudo-lateral">
+
+        <!-- Coluna Central: Catálogo de Apostilas e Prévia de Leitura -->
+        <div class="conteudo-central">
+
+          <!-- Grade de Apostilas -->
+          <h2>Catálogo de Módulos</h2>
+          <div class="grade-cards" style="margin-bottom: 3.5rem;">
+
+            <!-- Apostila 1 -->
+            <article class="card-apostila">
+              <div class="card-topo">
+                <span class="card-tag">#IMUNO</span>
+                <span class="card-nivel">Introdutório</span>
+              </div>
+              <h3>Imunologia Veterinária Aplicada</h3>
+              <p>
+                Visão detalhada dos órgãos linfoides primários e secundários, reconhecimento molecular de patógenos (PAMPs/PRRs), fagócitos e sistema complemento.
+              </p>
+              <div class="card-rodape">
+                <span class="card-meta">Amostra Completa</span>
+                <a href="#leitor-amostra" class="btn btn-sm btn-destaque">Ler Amostra Aberta</a>
+              </div>
+            </article>
+
+            <!-- Apostila 2 -->
+            <article class="card-apostila">
+              <div class="card-topo">
+                <span class="card-tag">#POSOLOGIA</span>
+                <span class="card-nivel">Intermediário</span>
+              </div>
+              <h3>Farmacologia Clínica & Dosagens</h3>
+              <p>
+                Guia visual com tabelas de conversão rápida de miligramas para mililitros, fórmulas de infusão contínua e contraindicações por espécie animal.
+              </p>
+              <div class="card-rodape">
+                <span class="card-meta">8 Capítulos</span>
+                <a href="contato.html" class="btn btn-sm btn-secundario">Solicitar Módulo</a>
+              </div>
+            </article>
+
+            <!-- Apostila 3 -->
+            <article class="card-apostila">
+              <div class="card-topo">
+                <span class="card-tag">#MORFOLOGIA</span>
+                <span class="card-nivel">Intermediário</span>
+              </div>
+              <h3>Patologia Geral & Lesões Teciduais</h3>
+              <p>
+                Comparativo sistemático das respostas celulares ao estresse: esteatose, necrose de coagulação vs. liquefativa, trombos e cascata inflamatória.
+              </p>
+              <div class="card-rodape">
+                <span class="card-meta">10 Capítulos</span>
+                <a href="contato.html" class="btn btn-sm btn-secundario">Solicitar Módulo</a>
+              </div>
+            </article>
+
+            <!-- Apostila 4 -->
+            <article class="card-apostila">
+              <div class="card-topo">
+                <span class="card-tag">#NEURO</span>
+                <span class="card-nivel">Intermediário</span>
+              </div>
+              <h3>Neurologia Veterinária Essencial</h3>
+              <p>
+                Mapeamento das vias aferentes e eferentes, localização de lesões na medula espinhal e sistema vestibular em cães, gatos e equinos.
+              </p>
+              <div class="card-rodape">
+                <span class="card-meta">6 Capítulos</span>
+                <a href="contato.html" class="btn btn-sm btn-secundario">Solicitar Módulo</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Leitor Web de Prévia Gratuita da Apostila -->
+          <article class="leitor-previa" id="leitor-amostra">
+            <div class="leitor-cabecalho">
+              <div class="hero-selos">
+                <span class="badge badge-destaque">Prévia Gratuita Aberta</span>
+                <span class="badge">Capítulo 01 // Imunologia Básica</span>
+              </div>
+              <h2>Mecanismos de Defesa: Imunidade Inata e Adaptativa</h2>
+              <p style="color: var(--cor-texto-mutado); font-size: 0.95rem;">
+                Texto condensado e estruturado para consulta acadêmica e preparação para provas teóricas.
+              </p>
+            </div>
+
+            <section>
+              <h3>1. A Primeira Linha de Defesa do Paciente Animal</h3>
+              <p>
+                A <strong>imunidade inata</strong> constitui o conjunto de barreiras físicas (pele intacta, muco e epitélio ciliado), químicas (ácido clorídrico estomacal e lisozima lacrimal) e celulares que estão operacionais desde o nascimento do animal. Diferente da resposta adaptativa, ela não exige sensibilização antigênica prévia e atua em minutos ou poucas horas após a agressão tecidual.
+              </p>
+              <p>
+                Os principais agentes celulares envolvidos na fase aguda são os <strong>neutrófilos</strong> (primeiros a migrar por diapedese) e os <strong>macrófagos teciduais</strong>, que realizam a fagocitose mediada por receptores de reconhecimento de padrões (PRRs), ativando a liberação de citocinas pró-inflamatórias (como TNF-alfa e IL-1).
+              </p>
+            </section>
+
+            <!-- Bloco de Anotações Privadas do Estudante -->
+            <div class="bloco-anotacoes">
+              <h4>📝 Bloco de Notas Pessoais de Estudo</h4>
+              <p style="font-size: 0.88rem; color: var(--cor-alerta-texto); margin-bottom: 0.5rem;">
+                Utilize este espaço para registrar seus insights do capítulo. (Na Versão 2, estas anotações serão salvas automaticamente no seu navegador via <code>localStorage</code>).
+              </p>
+              <textarea id="bloco-notas" class="campo-textarea" rows="3" placeholder="Digite suas anotações aqui (ex: lembrar que macrófagos fazem ligação com a imunidade adaptativa apresentando antígenos via MHC classe II)..."></textarea>
+            </div>
+
+            <!-- Quadros Comparativos em Tabela Semântica -->
+            <section style="margin-top: 2rem;">
+              <h3>2. Quadros Comparativos de Alta Retenção</h3>
+              <p>
+                Em provas acadêmicas de Medicina Veterinária, a distinção entre os tipos de resposta biológica é cobrada com frequência. Analise os critérios objetivos na tabela abaixo:
+              </p>
+
+              <!-- Tabela 1: Inata vs Adaptativa -->
+              <h4>Quadro 01: Comparativo entre Imunidade Inata e Adaptativa</h4>
+              <div class="tabela-conteiner">
+                <table class="tabela-comparativa">
+                  <thead>
+                    <tr>
+                      <th scope="col">Critério de Avaliação</th>
+                      <th scope="col">Imunidade Inata</th>
+                      <th scope="col">Imunidade Adaptativa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Tempo de Resposta</th>
+                      <td>Imediato (minutos a horas após o contato)</td>
+                      <td>Tardio (dias ou semanas no primeiro contato)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Especificidade</th>
+                      <td>Reconhece padrões moleculares amplos (PAMPs)</td>
+                      <td>Alta especificidade para epítopos antigênicos únicos</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Memória Imunológica</th>
+                      <td>Ausente (responde sempre com a mesma intensidade)</td>
+                      <td>Presente (respostas secundárias mais rápidas e potentes)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Células Principais</th>
+                      <td>Neutrófilos, Macrófagos, Células NK e Eosinófilos</td>
+                      <td>Linfócitos T (CD4+ e CD8+) e Linfócitos B (Plasmócitos)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mediadores Solúveis</th>
+                      <td>Sistema Complemento, Lisozimas e Citocinas inatas</td>
+                      <td>Anticorpos (Imunoglobulinas: IgG, IgM, IgA, IgE)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Tabela 2: Inflamação Aguda vs Crônica -->
+              <h4 style="margin-top: 1.5rem;">Quadro 02: Resposta Inflamatória Aguda vs. Crônica</h4>
+              <div class="tabela-conteiner">
+                <table class="tabela-comparativa">
+                  <thead>
+                    <tr>
+                      <th scope="col">Característica Patológica</th>
+                      <th scope="col">Inflamação Aguda</th>
+                      <th scope="col">Inflamação Crônica</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Duração do Processo</th>
+                      <td>Curta (dias a semanas)</td>
+                      <td>Prolongada (meses a anos)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Infiltrado Predominante</th>
+                      <td>Neutrófilos e edema rico em proteínas</td>
+                      <td>Macrófagos, Linfócitos e Plasmócitos</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Sinais Cardinais</th>
+                      <td>Evidentes (Calor, rubor, tumor, dor e perda de função)</td>
+                      <td>Atenuados ou ausentes clinicamente</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Desfecho Tecidual</th>
+                      <td>Resolução completa ou formação de exsudato purulento</td>
+                      <td>Destruição tecidual acentuada, angiogênese e fibrose</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+              <a href="pratica.html" class="btn btn-primario">Resolver Casos Clínicos Deste Capítulo</a>
+              <a href="contato.html" class="btn btn-secundario">Adquirir Apostila Completa</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Barra Lateral Semântica: Glossário e Bibliografia (<aside>) -->
+        <aside class="barra-lateral-glossario" aria-labelledby="titulo-glossario">
+          <h3 id="titulo-glossario">Glossário Médico-Veterinário</h3>
+          <p style="font-size: 0.85rem; color: var(--cor-texto-mutado); margin-bottom: 1rem;">
+            Termos técnicos indispensáveis para a compreensão do ciclo clínico.
+          </p>
+
+          <dl>
+            <div class="item-glossario">
+              <dt>Antígeno</dt>
+              <dd>Qualquer substância estranha capaz de se ligar especificamente a anticorpos ou receptores de linfócitos.</dd>
+            </div>
+
+            <div class="item-glossario">
+              <dt>Opsonização</dt>
+              <dd>Processo em que anticorpos ou frações do complemento (C3b) revestem o patógeno, facilitando sua fagocitose.</dd>
+            </div>
+
+            <div class="item-glossario">
+              <dt>Diapedese</dt>
+              <dd>Migração ativa de leucócitos através dos poros da parede endotelial em direção ao tecido inflamado.</dd>
+            </div>
+
+            <div class="item-glossario">
+              <dt>Apoptose</dt>
+              <dd>Morte celular programada sem rompimento de membrana e sem deflagrar resposta inflamatória tecidual.</dd>
+            </div>
+
+            <div class="item-glossario">
+              <dt>Biodisponibilidade</dt>
+              <dd>Fração do fármaco administrado que alcança inalterada a circulação sistêmica do animal.</dd>
+            </div>
+          </dl>
+
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--cor-borda);">
+            <h4>Fontes Recomendadas</h4>
+            <ul style="padding-left: 1rem; font-size: 0.82rem; color: var(--cor-texto-mutado); line-height: 1.4;">
+              <li>TIZARD, I. R. Imunologia Veterinária. 10ª ed.</li>
+              <li>SPINOSA, H. S. Farmacologia Veterinária. 6ª ed.</li>
+              <li>ZACHARY, J. F. Bases da Patologia. 6ª ed.</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Semântico -->
+  <footer class="rodape-principal">
+    <div class="conteiner">
+      <div class="rodape-grade">
+        <div class="rodape-coluna">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+            <div class="marca-icone" style="width: 28px; height: 28px; font-size: 0.9rem;">SV</div>
+            <span style="font-weight: 800; font-size: 1.1rem; color: #fff;">StudyVet</span>
+          </div>
+          <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5;">
+            Biblioteca digital de apostilas, esquemas conceituais e tabelas diagnósticas para a graduação em Medicina Veterinária.
+          </p>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Navegação</h4>
+          <ul class="rodape-lista">
+            <li><a href="index.html">Início (Apresentação)</a></li>
+            <li><a href="conteudos.html">Biblioteca & Amostras Gratuitas</a></li>
+            <li><a href="pratica.html">Casos Clínicos & Questões</a></li>
+            <li><a href="contato.html">Diagnóstico & Sobre o Projeto</a></li>
+          </ul>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Disciplinas</h4>
+          <ul class="rodape-lista">
+            <li><a href="conteudos.html">Imunologia Veterinária</a></li>
+            <li><a href="conteudos.html">Farmacologia Clínica</a></li>
+            <li><a href="conteudos.html">Patologia Sistêmica</a></li>
+            <li><a href="conteudos.html">Sistema Nervoso & Sinapses</a></li>
+            <li><a href="conteudos.html">Bioquímica Veterinária</a></li>
+          </ul>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Informações Acadêmicas</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.4rem;">
+            <strong>Disciplina:</strong> Desenvolvimento Web 1 (IFC)
+          </p>
+          <p style="font-size: 0.85rem; color: #94a3b8;">
+            <strong>Entrega:</strong> Versão 1 (HTML5 e CSS3)
+          </p>
+        </div>
+      </div>
+
+      <div class="rodape-aviso">
+        <p>
+          <strong>Aviso de Responsabilidade Educacional:</strong> O StudyVet é um projeto didático e acadêmico. Nenhum conteúdo deste portal substitui aulas teóricas, livros-texto originais ou conduta clínico-veterinária prescrita por profissional habilitado.
+        </p>
+        <p style="margin-top: 0.5rem; color: #64748b;">
+          © 2026 StudyVet — Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudyVet — Portal de Ensino Visual e Alta Performance em Medicina Veterinária. Domine as matérias da graduação com resumos visuais, mapas conceituais e casos práticos.">
+  <title>StudyVet // Portal de Ensino Visual em Medicina Veterinária</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a3622'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50' font-weight='800' fill='%23ffffff'>SV</text></svg>">
+  <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Principal e Menu de Navegação -->
+  <header class="cabecalho-principal">
+    <div class="conteiner cabecalho-barra">
+      <a href="index.html" class="marca-link" title="StudyVet - Página Inicial">
+        <div class="marca-icone" aria-hidden="true">SV</div>
+        <div class="marca-texto">
+          <span class="marca-titulo">StudyVet</span>
+          <span class="marca-sub">Medicina Veterinária</span>
+        </div>
+      </a>
+
+      <nav class="navegacao-menu" aria-label="Navegação Principal">
+        <a href="index.html" class="navegacao-link ativo">Início</a>
+        <a href="conteudos.html" class="navegacao-link">Biblioteca & Amostras</a>
+        <a href="pratica.html" class="navegacao-link">Casos Clínicos & Questões</a>
+        <a href="contato.html" class="navegacao-link">Diagnóstico & Sobre</a>
+      </nav>
+
+      <div class="cabecalho-acoes">
+        <button type="button" class="btn-tema" id="btn-tema" title="Alternar tema visual (Planejado para Versão 2)">
+          <span>Modo Escuro (V2)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudo-principal">
+
+    <!-- Seção Hero (Apresentação Principal) -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="conteiner hero-grade">
+        <div class="hero-conteudo">
+          <div class="hero-selos">
+            <span class="badge badge-destaque">Selo de Atualização 2026</span>
+            <span class="badge">+1.200 Estudantes Conectados</span>
+            <span class="badge">Materiais de Alta Precisão</span>
+          </div>
+
+          <h1 id="titulo-hero">Domine a Medicina Veterinária na metade do tempo.</h1>
+          <p class="lead">
+            Transforme livros densos em clareza visual absoluta. Mapas conceituais autorais, quadros comparativos e raciocínio clínico direto para o estudante universitário de alta performance.
+          </p>
+
+          <div class="hero-botoes">
+            <a href="contato.html" class="btn btn-primario">Fazer Diagnóstico de Nível</a>
+            <a href="conteudos.html" class="btn btn-secundario">Explorar Amostras Gratuitas</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="card-hero-mockup">
+            <div class="mockup-cabecalho">
+              <div>
+                <strong>Apostila Demonstrativa</strong>
+                <p style="font-size: 0.8rem; color: var(--cor-texto-mutado); margin: 0;">Módulo Imunologia Veterinária</p>
+              </div>
+              <span class="badge badge-destaque">Acesso Livre</span>
+            </div>
+            <div class="mockup-corpo">
+              <div class="mockup-item">
+                <span class="mockup-check">✓</span>
+                <span>Imunidade Inata vs. Adaptativa comparadas</span>
+              </div>
+              <div class="mockup-item">
+                <span class="mockup-check">✓</span>
+                <span>Fluxo de ativação de Linfócitos T e B</span>
+              </div>
+              <div class="mockup-item">
+                <span class="mockup-check">✓</span>
+                <span>Posologia clínica e cálculos práticos</span>
+              </div>
+              <div class="mockup-item">
+                <span class="mockup-check">✓</span>
+                <span>Diagramas de sinapses e potenciais de ação</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--cor-borda);">
+              <a href="conteudos.html" class="btn btn-destaque btn-bloco btn-sm">Abrir Leitor de Amostras</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilares Metodológicos (Flexbox) -->
+    <section class="secao-espacada" aria-labelledby="titulo-pilares">
+      <div class="conteiner">
+        <div class="texto-centralizado">
+          <span class="destaque-subtitulo">Engenharia Didática</span>
+          <h2 id="titulo-pilares">Por que o método visual acelera seus estudos?</h2>
+          <p class="lead" style="margin-inline: auto;">
+            Criado por quem vive a rotina acadêmica da veterinária e sabe que textos prolixos reduzem a retenção em semanas de provas.
+          </p>
+        </div>
+
+        <div class="grade-pilares">
+          <article class="card-pilar">
+            <div class="pilar-icone" aria-hidden="true">🎯</div>
+            <h3>Foco no Essencial</h3>
+            <p>
+              Filtragem do excesso de ruído acadêmico dos livros-texto clássicos, entregando apenas os conceitos morfológicos, celulares e terapêuticos exigidos na rotina clínica e nas provas.
+            </p>
+          </article>
+
+          <article class="card-pilar">
+            <div class="pilar-icone" aria-hidden="true">🧠</div>
+            <h3>Aprendizado Visual e Fixação</h3>
+            <p>
+              Mapas conceituais com conexões cromáticas intuitivas e tabelas comparativas sintéticas. Você compreende mecanismos biológicos complexos com um único olhar estruturado.
+            </p>
+          </article>
+
+          <article class="card-pilar">
+            <div class="pilar-icone" aria-hidden="true">📱</div>
+            <h3>Multi-Dispositivo</h3>
+            <p>
+              Projetado para leitura contínua e confortável em computadores, tablets ou celulares nos intervalos do hospital-escola, sem elementos truncados ou lentidão.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vitrine da Biblioteca de Estudo (Flexbox) -->
+    <section class="secao-espacada secao-alt" aria-labelledby="titulo-biblioteca">
+      <div class="conteiner">
+        <div class="texto-centralizado">
+          <span class="destaque-subtitulo">Acervo de Disciplinas</span>
+          <h2 id="titulo-biblioteca">Biblioteca Multidisciplinar StudyVet</h2>
+          <p class="lead" style="margin-inline: auto;">
+            Módulos didáticos desenhados para conectar o ciclo básico aos desafios clínicos reais dos pacientes animais.
+          </p>
+        </div>
+
+        <div class="grade-cards">
+          <!-- Card 1: Imunologia -->
+          <article class="card-apostila">
+            <div class="card-topo">
+              <span class="card-tag">#IMUNO</span>
+              <span class="card-nivel">Nível: Introdutório</span>
+            </div>
+            <h3>Imunologia Veterinária</h3>
+            <p>
+              Imunidade inata, barreiras físicas, fagocitose, ativação adaptativa, apresentação de antígenos e transferência de imunidade passiva materna em filhotes.
+            </p>
+            <div class="card-rodape">
+              <span class="card-meta">Amostra Completa</span>
+              <a href="conteudos.html" class="btn btn-sm btn-secundario">Ver Apostila</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Farmacologia -->
+          <article class="card-apostila">
+            <div class="card-topo">
+              <span class="card-tag">#POSOLOGIA</span>
+              <span class="card-nivel">Nível: Intermediário</span>
+            </div>
+            <h3>Farmacologia Clínica</h3>
+            <p>
+              Cálculos de dose sem erros, vias de administração enterais e parenterais, meia-vida plasmática, biodisponibilidade e mecanismos dos principais fármacos veterinários.
+            </p>
+            <div class="card-rodape">
+              <span class="card-meta">8 Capítulos</span>
+              <a href="conteudos.html" class="btn btn-sm btn-secundario">Ver Apostila</a>
+            </div>
+          </article>
+
+          <!-- Card 3: Sistema Nervoso -->
+          <article class="card-apostila">
+            <div class="card-topo">
+              <span class="card-tag">#NEURO</span>
+              <span class="card-nivel">Nível: Intermediário</span>
+            </div>
+            <h3>Sistema Nervoso & Sinapses</h3>
+            <p>
+              Potenciais de ação neuronais, neurotransmissores centrais e periféricos, arcos reflexos motores e correlações neurológicas em pequenos e grandes animais.
+            </p>
+            <div class="card-rodape">
+              <span class="card-meta">6 Capítulos</span>
+              <a href="conteudos.html" class="btn btn-sm btn-secundario">Ver Apostila</a>
+            </div>
+          </article>
+
+          <!-- Card 4: Patologia -->
+          <article class="card-apostila">
+            <div class="card-topo">
+              <span class="card-tag">#MORFOLOGIA</span>
+              <span class="card-nivel">Nível: Intermediário</span>
+            </div>
+            <h3>Patologia Sistêmica</h3>
+            <p>
+              Respostas inflamatórias agudas e crônicas, alterações hemodinâmicas, morte celular (necrose vs. apoptose) e lesões teciduais dos principais sistemas orgânicos.
+            </p>
+            <div class="card-rodape">
+              <span class="card-meta">10 Capítulos</span>
+              <a href="conteudos.html" class="btn btn-sm btn-secundario">Ver Apostila</a>
+            </div>
+          </article>
+
+          <!-- Card 5: Bioquímica -->
+          <article class="card-apostila">
+            <div class="card-topo">
+              <span class="card-tag">#BIOQUÍMICA</span>
+              <span class="card-nivel">Nível: Introdutório</span>
+            </div>
+            <h3>Bioquímica Veterinária</h3>
+            <p>
+              Metabolismo de carboidratos, lipídios e proteínas aplicados à fisiologia comparada de carnívoros estritos, onívoros e animais poligástricos (ruminantes).
+            </p>
+            <div class="card-rodape">
+              <span class="card-meta">7 Capítulos</span>
+              <a href="conteudos.html" class="btn btn-sm btn-secundario">Ver Apostila</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trilha de Estudos para Iniciantes -->
+    <section class="secao-espacada" aria-labelledby="titulo-trilha">
+      <div class="conteiner">
+        <div class="texto-centralizado">
+          <span class="destaque-subtitulo">Ordem Pedagógica</span>
+          <h2 id="titulo-trilha">Trilha de Estudos Sugerida</h2>
+          <p class="lead" style="margin-inline: auto;">
+            Estude as matérias na ordem correta para nunca mais travar ao analisar um caso clínico ou terapêutico avançado.
+          </p>
+        </div>
+
+        <div class="grade-trilha">
+          <div class="etapa-trilha">
+            <div class="etapa-numero">1</div>
+            <div class="etapa-corpo">
+              <div class="etapa-topo">
+                <h4>Fisiologia Celular & Bioquímica Veterinária</h4>
+                <span class="etapa-tempo">Tempo médio: 12 horas</span>
+              </div>
+              <p>Compreenda a maquinaria molecular, equilíbrio osmótico, pH e vias energéticas antes de entrar nos mecanismos patológicos.</p>
+            </div>
+          </div>
+
+          <div class="etapa-trilha">
+            <div class="etapa-numero">2</div>
+            <div class="etapa-corpo">
+              <div class="etapa-topo">
+                <h4>Imunologia Básica & Reação Imunológica</h4>
+                <span class="etapa-tempo">Tempo médio: 15 horas</span>
+              </div>
+              <p>Domine a distinção entre células efetoras, anticorpos, citocinas e a primeira linha de defesa contra agentes infecciosos.</p>
+            </div>
+          </div>
+
+          <div class="etapa-trilha">
+            <div class="etapa-numero">3</div>
+            <div class="etapa-corpo">
+              <div class="etapa-topo">
+                <h4>Patologia Sistêmica & Lesão Tecidual</h4>
+                <span class="etapa-tempo">Tempo médio: 18 horas</span>
+              </div>
+              <p>Entenda como a inflamação, trombose, choque e degenerações celulares ocorrem nos tecidos diante de injúrias e patógenos.</p>
+            </div>
+          </div>
+
+          <div class="etapa-trilha">
+            <div class="etapa-numero">4</div>
+            <div class="etapa-corpo">
+              <div class="etapa-topo">
+                <h4>Farmacologia Clínica Aplicada</h4>
+                <span class="etapa-tempo">Tempo médio: 20 horas</span>
+              </div>
+              <p>Aplique os fármacos de forma segura com base nos receptores mapeados nas etapas anteriores e domine cálculos de posologia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos de Acesso e Materiais Didáticos -->
+    <section class="secao-espacada secao-alt" aria-labelledby="titulo-planos">
+      <div class="conteiner">
+        <div class="texto-centralizado">
+          <span class="destaque-subtitulo">Acesso Estudantil</span>
+          <h2 id="titulo-planos">Planos Didáticos Acessíveis</h2>
+          <p class="lead" style="margin-inline: auto;">
+            Valores simbólicos desenhados para a realidade universitária com materiais atualizados para 2026.
+          </p>
+        </div>
+
+        <div class="grade-planos">
+          <!-- Plano 1 -->
+          <div class="card-plano">
+            <h3>Módulo Unitário</h3>
+            <p>Ideal para quem precisa destravar uma matéria específica neste semestre.</p>
+            <div class="plano-preco">
+              <span class="preco-valor">R$ 29,90</span>
+              <span class="preco-periodo">/ apostila individual</span>
+            </div>
+            <ul class="plano-recursos">
+              <li>1 Apostila temática completa</li>
+              <li>PDF de alta resolução para tablet</li>
+              <li>Quadros comparativos do módulo</li>
+              <li>Banco de questões da disciplina</li>
+              <li>Selo de Atualização 2026</li>
+            </ul>
+            <a href="contato.html" class="btn btn-secundario btn-bloco">Selecionar Módulo</a>
+          </div>
+
+          <!-- Plano 2 (Destaque) -->
+          <div class="card-plano destaque">
+            <span class="badge-plano-destaque">Mais Procurado</span>
+            <h3>Combo Semestral</h3>
+            <p>O pacote perfeito para cobrir todas as disciplinas essenciais do semestre.</p>
+            <div class="plano-preco">
+              <span class="preco-valor">R$ 89,90</span>
+              <span class="preco-periodo">/ 5 disciplinas inclusas</span>
+            </div>
+            <ul class="plano-recursos">
+              <li>Todas as 5 apostilas da biblioteca</li>
+              <li>PDFs otimizados para iPad e Galaxy Tab</li>
+              <li>Todos os resumos e mapas mentais</li>
+              <li>Casos clínicos e gabaritos comentados</li>
+              <li>Pacote de Flashcards estilo Anki</li>
+              <li>Acesso vitalício aos materiais</li>
+            </ul>
+            <a href="contato.html" class="btn btn-primario btn-bloco">Garantir Combo Semestral</a>
+          </div>
+
+          <!-- Plano 3 -->
+          <div class="card-plano">
+            <h3>Acesso Total</h3>
+            <p>Para estudantes dedicados, residentes e concurseiros que querem suporte contínuo.</p>
+            <div class="plano-preco">
+              <span class="preco-valor">R$ 197,00</span>
+              <span class="preco-periodo">/ pagamento único</span>
+            </div>
+            <ul class="plano-recursos">
+              <li>Todas as disciplinas e futuras adições</li>
+              <li>Grupo acadêmico de dúvidas (Telegram)</li>
+              <li>Banco de mais de 500 questões</li>
+              <li>Atualizações anuais garantidas</li>
+              <li>Comprovante de participação na trilha</li>
+            </ul>
+            <a href="contato.html" class="btn btn-secundario btn-bloco">Garantir Acesso Total</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Semântico -->
+  <footer class="rodape-principal">
+    <div class="conteiner">
+      <div class="rodape-grade">
+        <div class="rodape-coluna">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+            <div class="marca-icone" style="width: 28px; height: 28px; font-size: 0.9rem;">SV</div>
+            <span style="font-weight: 800; font-size: 1.1rem; color: #fff;">StudyVet</span>
+          </div>
+          <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5;">
+            Portal acadêmico de ensino visual e raciocínio prático para a graduação em Medicina Veterinária.
+          </p>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Mapa de Páginas</h4>
+          <ul class="rodape-lista">
+            <li><a href="index.html">Início (Apresentação)</a></li>
+            <li><a href="conteudos.html">Biblioteca & Amostras Gratuitas</a></li>
+            <li><a href="pratica.html">Casos Clínicos & Questões</a></li>
+            <li><a href="contato.html">Diagnóstico & Sobre o Projeto</a></li>
+          </ul>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Disciplinas do Portal</h4>
+          <ul class="rodape-lista">
+            <li><a href="conteudos.html">Imunologia Veterinária</a></li>
+            <li><a href="conteudos.html">Farmacologia Clínica</a></li>
+            <li><a href="conteudos.html">Patologia Sistêmica</a></li>
+            <li><a href="conteudos.html">Sistema Nervoso & Sinapses</a></li>
+            <li><a href="conteudos.html">Bioquímica Veterinária</a></li>
+          </ul>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Informações Acadêmicas</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.4rem;">
+            <strong>Disciplina:</strong> Desenvolvimento Web 1 (IFC)
+          </p>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.4rem;">
+            <strong>Modalidade:</strong> Trabalho Individual
+          </p>
+          <p style="font-size: 0.85rem; color: #94a3b8;">
+            <strong>Tecnologias:</strong> HTML5 & CSS3 puro (Versão 1)
+          </p>
+        </div>
+      </div>
+
+      <div class="rodape-aviso">
+        <p>
+          <strong>Aviso de Responsabilidade Educacional:</strong> O StudyVet é um projeto estritamente didático e acadêmico. Todo o material teórico, diagramas e casos clínicos fictícios servem como apoio de estudo universitário e não substituem aulas da graduação, supervisão docente ou o atendimento, diagnóstico e prescrição realizados presencialmente por um Médico Veterinário habilitado no CRMV.
+        </p>
+        <p style="margin-top: 0.5rem; color: #64748b;">
+          © 2026 StudyVet — Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
